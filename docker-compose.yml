@@ -20,6 +20,8 @@ services:
       - drkiq-redis:/var/lib/redis/data
 
   drkiq:
+    tty: true
+    stdin_open: true
     build:
       context: .
     volumes:
