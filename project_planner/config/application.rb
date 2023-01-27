@@ -6,7 +6,7 @@ require "rails/all"
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
-module Drkiq
+module ProjectPlanner
   class Application < Rails::Application
     config.load_defaults 7.0
 
@@ -15,7 +15,7 @@ module Drkiq
     config.logger    = ActiveSupport::TaggedLogging.new(Logger.new(STDOUT))
 
     config.cache_store = :redis_store, ENV['CACHE_URL'],
-                         { namespace: 'drkiq::cache' }
+                         { namespace: 'project_planner::cache' }
 
     config.active_job.queue_adapter = :sidekiq
   end
