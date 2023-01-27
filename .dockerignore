@@ -1,6 +1,6 @@
 .git
 .dockerignore
 .env
-drkiq/node_modules/
-drkiq/vendor/bundle/
-drkiq/tmp/
+project_planner/node_modules/
+project_planner/vendor/bundle/
+project_planner/tmp/
